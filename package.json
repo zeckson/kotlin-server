@@ -1,0 +1,21 @@
+{
+  "name": "kotlin-server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "node-kotlin": "^1.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "7.0.12",
+    "kotlin": "1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npm run build && node out/server.js",
+    "build": "./bin/bin/kotlinc-js -module-kind commonjs -output out/server.js -meta-info src/com.github.zeckson.Server.kt"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
