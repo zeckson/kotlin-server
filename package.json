@@ -13,7 +13,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npm run build && node out/server.js",
-    "build": "./bin/bin/kotlinc-js -module-kind commonjs -output out/server.js -meta-info src/com.github.zeckson.Server.kt"
+    "build": "./bin/bin/kotlinc-js -module-kind commonjs -output out/server.js -meta-info src/**/*.kt src/*.kt"
   },
   "keywords": [],
   "author": "",
